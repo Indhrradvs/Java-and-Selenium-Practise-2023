@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com</groupId>
-  <artifactId>SeleniumPractice2023</artifactId>
+  <groupId>com.SwagLabs.selenium</groupId>
+  <artifactId>SwagLabsApplication</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>SeleniumPractice2023</name>
+  <name>SwagLabsApplication</name>
   <url>http://www.example.com</url>
 
   <properties>
@@ -18,31 +18,33 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
- 
- <dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.7.2</version>
+    <version>4.8.1</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.3.1</version>
+    <version>5.3.2</version>
 </dependency>
-
-<!-- TestNG dependency -->
-<dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>7.6.0</version>
-  <scope>test</scope>
-</dependency>
-
 
   </dependencies>
 

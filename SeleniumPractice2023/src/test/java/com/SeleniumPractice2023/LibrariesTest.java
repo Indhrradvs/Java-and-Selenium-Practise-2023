@@ -12,7 +12,7 @@ public class LibrariesTest {
 
 	public static void main(String[] args) throws Exception {
 
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup(); //Downloads driver executable files
 
 		WebDriver driver = new ChromeDriver();
 
